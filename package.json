@@ -1,0 +1,19 @@
+{
+  "name": "Electron-sample-app",
+  "version": "1.0.0",
+  "description": "Basic Electron sample app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linkRachit/Electron-sample-app.git"
+  },
+  "author": "Rachit Goel<rachit2goel@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linkRachit/Electron-sample-app/issues"
+  },
+  "homepage": "https://github.com/linkRachit/Electron-sample-app#readme"
+}
