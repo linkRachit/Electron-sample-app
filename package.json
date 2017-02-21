@@ -4,7 +4,13 @@
   "description": "Basic Electron sample app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron .",
+    "build": "electron-packager . Electron-sample-app",
+    "build-linux32": "electron-packager . filesync --platform=linux  --arch=ia32",
+    "build-linux64": "electron-packager . filesync --platform=linux  --arch=x64",
+    "build-mac": "electron-packager . filesync --platform=darwin  --arch=x64",
+    "build-win32": "electron-packager . filesync --platform=win32  --arch=ia32",
+    "build-win64": "electron-packager . filesync --platform=win32  --arch=x64"
   },
   "repository": {
     "type": "git",
@@ -17,6 +23,7 @@
   },
   "homepage": "https://github.com/linkRachit/Electron-sample-app#readme",
   "devDependencies": {
-    "electron": "^1.4.15"
+    "electron": "^1.4.15",
+    "electron-packager": "^8.5.2"
   }
 }
