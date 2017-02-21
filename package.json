@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/linkRachit/Electron-sample-app/issues"
   },
-  "homepage": "https://github.com/linkRachit/Electron-sample-app#readme"
+  "homepage": "https://github.com/linkRachit/Electron-sample-app#readme",
+  "devDependencies": {
+    "electron": "^1.4.15"
+  }
 }
