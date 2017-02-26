@@ -51,15 +51,6 @@ function createWindow() {
     protocol: 'file:',
     slashes: true
   }))
-  
-
-  function onListening() {
-    mainWindow.loadURL('http://localhost:5000');
-    //mainWindow.toggleDevTools();
-  }
-
-  
-  server.on('listening', onListening);
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();
@@ -78,7 +69,6 @@ function createWindow() {
 
   mainWindow.on('page-title-updated', e => {
     e.preventDefault()
-    tray.create(mainWindow)
   })
 
   return mainWindow
