@@ -7,6 +7,7 @@ const BrowserWindow = electron.BrowserWindow
 const path = require('path')
 const url = require('url')
 const fs = require('fs')
+const tray = require('./tray')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -69,6 +70,7 @@ function createWindow() {
 
   mainWindow.on('page-title-updated', e => {
     e.preventDefault()
+    tray.create(mainWindow)
   })
 
   return mainWindow
