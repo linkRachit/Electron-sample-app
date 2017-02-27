@@ -9,6 +9,12 @@ const url = require('url')
 const fs = require('fs')
 const tray = require('./tray')
 
+const AutoLaunch = require('auto-launch')
+
+const ElectronSampleAppLauncher = new AutoLaunch({
+  name: 'Electron-sample-app'
+});
+
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
@@ -55,6 +61,19 @@ function createWindow() {
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();
+
+  ElectronSampleAppLauncher.enable();
+
+  ElectronSampleAppLauncher.isEnabled()
+  .then(function(isEnabled){
+      if(isEnabled){
+          return;
+      }
+      ElectronSampleAppLauncher.enable();
+  })
+  .catch(function(err){
+      // handle error
+  });
 
   mainWindow.on('close', e => {
     if (!isQuitting) {
