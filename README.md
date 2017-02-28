@@ -1,13 +1,13 @@
-## Electron-sample-app
+# Electron-sample-app
 
 Sample Electron app which includes tray, auto-launch, electron-packager for all the three platforms( Windows, Linux, Mac )
 
-# Electron Packager
+## Electron Packager
 
 For Default build
 ```console
 
-  "build": "electron-packager . Electron-sample-app"
+	"build": "electron-packager . Electron-sample-app"
 
 ```
 
@@ -24,17 +24,17 @@ For windows build
 
 	"build-mac": "electron-packager . Electron-sample-app --platform=darwin  --arch=x64"
 
-    "build-win32": "electron-packager . Electron-sample-app --platform=win32  --arch=ia32"
+	"build-win32": "electron-packager . Electron-sample-app --platform=win32  --arch=ia32"
 
 ```
 For Mac build
 ```console
 
-  "build-win64": "electron-packager . Electron-sample-app --platform=win32  --arch=x64"
+	"build-win64": "electron-packager . Electron-sample-app --platform=win32  --arch=x64"
 
 ```
 
-# Run
+## Run
 
 electron is an npm module that contains pre-compiled versions of Electron.
 
@@ -67,16 +67,19 @@ Windows
 
 ```
 
-# Try this Sample
+## Try this Sample
 
 ```console
 
 	# Clone the repository
 	git clone git@github.com:linkRachit/Electron-sample-app.git
+
 	# Go into the repository
 	cd Electron-sample-app
+
 	# Install dependencies
 	npm install
+	
 	# Run the app
 	npm start
 
