@@ -6,11 +6,11 @@
   "scripts": {
     "start": "electron .",
     "build": "electron-packager . Electron-sample-app",
-    "build-linux32": "electron-packager . filesync --platform=linux  --arch=ia32",
-    "build-linux64": "electron-packager . filesync --platform=linux  --arch=x64",
-    "build-mac": "electron-packager . filesync --platform=darwin  --arch=x64",
-    "build-win32": "electron-packager . filesync --platform=win32  --arch=ia32",
-    "build-win64": "electron-packager . filesync --platform=win32  --arch=x64"
+    "build-linux32": "electron-packager . Electron-sample-app --platform=linux  --arch=ia32",
+    "build-linux64": "electron-packager . Electron-sample-app --platform=linux  --arch=x64",
+    "build-mac": "electron-packager . Electron-sample-app --platform=darwin  --arch=x64",
+    "build-win32": "electron-packager . Electron-sample-app --platform=win32  --arch=ia32",
+    "build-win64": "electron-packager . Electron-sample-app --platform=win32  --arch=x64"
   },
   "repository": {
     "type": "git",
