@@ -1,17 +1,17 @@
 # Electron-sample-app
 
-Sample Electron app which includes tray, auto-launch, electron-packager for all the three platforms( Windows, Linux, Mac )
+Sample Electron app which includes tray, auto-launch, electron-packager for all the three OS-specific bundles( Windows, Linux, Mac )
 
 ## Electron Packager
 
-For Default build
+For Default OS-specific Bundle
 ```console
 
 	"build": "electron-packager . Electron-sample-app"
 
 ```
 
-For Linux build
+For Linux Bundle
 ```console
 
     "build-linux32": "electron-packager . Electron-sample-app --platform=linux  --arch=ia32"
@@ -19,48 +19,58 @@ For Linux build
     "build-linux64": "electron-packager . Electron-sample-app --platform=linux  --arch=x64"
 
 ```
-For windows build
+For windows Bundle
 ```console
-
-	"build-mac": "electron-packager . Electron-sample-app --platform=darwin  --arch=x64"
 
 	"build-win32": "electron-packager . Electron-sample-app --platform=win32  --arch=ia32"
-
-```
-For Mac build
-```console
 
 	"build-win64": "electron-packager . Electron-sample-app --platform=win32  --arch=x64"
 
 ```
+For Mac Bundle
+```console
+
+	"build-mac": "electron-packager . Electron-sample-app --platform=darwin  --arch=x64"
+	
+```
 
 ## Run
 
-electron is an npm module that contains pre-compiled versions of Electron.
+Electron is an npm module that contains pre-compiled versions of Electron.
 
 If you’ve installed it globally with npm, then you will only need to run the following in your app’s source directory:
 
 ```console
+
 	electron .
+
 ```
 
 If you’ve installed it locally, then run:
 
 macOS
+
 ```console
+
 	./node_modules/.bin/electron .
 	or
 	./Electron.app/Contents/MacOS/Electron your-app/
+
 ```
 Linux 
+
 ```console
+
 	./node_modules/.bin/electron .
 	or
 	./electron/electron your-app/
+
 ```
 
 Windows
+
 ```console
+
 	.\node_modules\.bin\electron .
 	or
 	.\electron\electron.exe your-app\
@@ -84,4 +94,5 @@ Windows
 	npm start
 
 ```
+Now you are able to see GUI of app, app icon in tray, and app service in platform services and every time system restart, app will be launch automatically.
 
